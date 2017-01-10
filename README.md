@@ -1,4 +1,4 @@
-# flexbox
+# Flexbox
 FlexBox Tutorial
 
 This is an excellent article with examples to learn how Flexbox functions.
