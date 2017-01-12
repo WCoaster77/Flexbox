@@ -108,10 +108,28 @@
 			}
 
 			footer {
-				flex: 0 0 90px; /* costrain header to 90px and dont let size change */
+				display: flex;
+				flex: 0 0 90px; /* costrain footer to 90px and dont let size change */
 				padding: 10px;
 				color: #fff;
 				background-color: rgba(61, 100, 158, .9);
+			}
+
+			.small-img {
+				display: flex;
+				margin-right: auto;
+			}
+
+			.small-img img {
+				padding-right: 10px;
+				width: 100px;
+			}
+
+			.music-controls {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;	
+				width: 50%
 			}
 		</style>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -178,6 +196,21 @@
 			</section>
 		</main>
 
-		<footer></footer>
+		<footer>
+			<div class="small-img">
+				<img src="./cattyboard.jpg"/> <!--Album Art-->
+				<div>
+					<p>Cats In The Cradle</p>
+					<p>Cat Stevens</p>
+				</div>
+			</div>
+			<div class="music-controls">
+				<i class="fa fa-step-backward"></i>
+				<i class="fa fa-pause"></i>
+				<i class="fa fa-step-forward"></i>
+				<i class="fa fa-rotate-right"></i>
+				<i class="fa fa-random"></i>
+			</div>
+		</footer>
 	</body>
 </html>
